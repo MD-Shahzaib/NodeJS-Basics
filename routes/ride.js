@@ -1,3 +1,28 @@
+// The commonly - used HTTP methods are POST, GET, PUT, PATCH, and DELETE.These methods correspond to create, read, update, and delete (or CRUD) operations, respectively.
+
+/*
+// Get request.
+fetch('http://localhost:3000/chat/getChats')
+.then(res => res.json())
+.then(res => console.log('res-->', res))
+
+// Post request.
+fetch('http://localhost:3000/chat/addChats', {method:'post'} )
+.then(res => res.json())
+.then(res => console.log('res-->', res))
+
+// Put/Update request.
+fetch('http://localhost:3000/chat/updateChats', {method:'PUT'} )
+.then(res => res.json())
+.then(res => console.log('res-->', res))
+
+// Delete request.
+fetch('http://localhost:3000/chat/deleteChats', {method:'DELETE'} )
+.then(res => res.json())
+.then(res => console.log('res-->', res))
+*/
+
+
 const express = require('express')
 const router = express.Router()
 const Rides = require('../models/Rides')
@@ -43,4 +68,3 @@ router.delete('/deleteRides/:id', (req, res) => {
 })
 
 module.exports = router;
-
